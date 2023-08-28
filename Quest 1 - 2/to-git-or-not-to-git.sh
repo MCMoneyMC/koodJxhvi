@@ -1,0 +1,1 @@
+curl https://01.kood.tech/assets/superhero/all.json | jq --raw-output '.[] | select(.id == 170) | .name, .powerstats.power, .appearance.gender'
